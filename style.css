@@ -22,10 +22,23 @@ html {
 }
 
 .grid {
+    
     display: grid;
-    grid-template-columns: 200px 500px 100px auto;
-    grid-gap: 20px;
-    grid-template-rows: 100vh 30vh;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3,15vh);
+}
+
+.item1 {
+    grid-column: span 2;
+}
+
+.item2 {
+    grid-row: span 3;
+}
+
+.item6 {
+    grid-row: span 3;
 }
 
 @media only screen and (max-width: 950px) {
@@ -35,7 +48,7 @@ html {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
     .grid {
         grid-template-columns: auto;
         grid-template-rows: repeat(9,40vh);
