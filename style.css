@@ -16,7 +16,7 @@ html {
     justify-content: center;
     align-items: center;
     border: 1px solid #fff;
-    color: #fff;
+    color: #000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--textSize);
 }
@@ -24,33 +24,98 @@ html {
 .grid {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(2, 45%);
-    grid-template-rows: repeat(7,12vh);
+    grid-template-columns: 55% 45%;
+    grid-template-rows: repeat(7,12.5vh);
+    justify-content: center;
+    padding: 20px 40px ;
     
 }
 
 .item1 {
     grid-column: span 2;
+    background-image: url(images/grid1.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .item2 {
     grid-row: span 3;
+    background-image: url(images/grid2.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url(images/grid3.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.item4 {
+    background-image: url(images/grid4.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.item5 {
+    background-image: url(images/grid5.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .item6 {
     grid-row: span 3;
+    background-image: url(images/grid6.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+
+.item7 {
+    background-image: url(images/grid7.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.item8 {
+    background-image: url(images/grid8.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.item9 {
+    background-image: url(images/grid9.png);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 @media only screen and (max-width: 950px) {
     .grid {
-        grid-template-columns: repeat(2,auto);
-        grid-template-rows: repeat(4,40vh);
+        grid-template-columns: 55% 45%;
+        grid-template-rows: repeat(9,12.4vh);
     }
 }
 
 @media only screen and (max-width: 650px) {
     .grid {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(9,40vh);
+        grid-template-columns: 55% 45%;
+        grid-template-rows: repeat(9,12.4vh);
     }
 }
